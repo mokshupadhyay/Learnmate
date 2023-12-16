@@ -5,7 +5,7 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 import "./Header.css";
 import "../Assets/LM1.png"; // Import the logo image
 import UserDetails from "./UserDetails"; // Import the UserDetails component
-import { useCart } from '../context/CartContext';
+import { useCart } from "../context/CartContext";
 
 function Header() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -27,12 +27,11 @@ function Header() {
   // Function to parse JWT token
   const parseJwt = (token) => {
     try {
-      return JSON.parse(atob(token.split('.')[1]));
+      return JSON.parse(atob(token.split(".")[1]));
     } catch (e) {
       return null;
     }
   };
-
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -43,45 +42,10 @@ function Header() {
 
   useEffect(() => {
     const token = localStorage.getItem("token");
-  
+
     if (token) {
       const decodedToken = parseJwt(token);
       setIsLoggedIn(true);
-  
-      // const fetchCartItems = (userId) => {
-      //   setLoading(true);
-      //   fetch(`http://localhost:3001/cart-items/${userId}`)
-      //     .then((response) => response.json())
-      //     .then((data) => {
-      //       setCartItems(data);
-      //       setLoading(false);
-      //     })
-      //     .catch((error) => {
-      //       setError("Error fetching cart items");
-      //       setLoading(false);
-      //     });
-      // };
-  
-      // const fetchCartDetails = (userId) => {
-      //   setLoading(true);
-      //   fetch(`http://localhost:3001/cart-items/${userId}/cart`)
-      //     .then((response) => response.json())
-      //     .then((data) => {
-      //       setCartDetails(data);
-      //       CartitemsDetails(data); 
-      //       console.log(data);
-            
-      //       // Update cart details using context
-      //       setLoading(false);
-      //     })
-      //     .catch((error) => {
-      //       setError("Error fetching cart details");
-      //       setLoading(false);
-      //     });
-      // };
-  
-      //fetchCartDetails(decodedToken.userDetails.login_id);
-      //fetchCartItems(decodedToken.userDetails.login_id);
     } else {
       setLoading(false);
     }
@@ -124,16 +88,7 @@ function Header() {
   };
 
   return (
-    <header
-      // style={{
-      //   top: visible ? "0" : "-100px",
-      //   transition: "top 0.3s",
-      //   position: "fixed",
-      //   width: "100%",
-      //   zIndex: "100",
-      //   pointerEvents: visible ? "auto" : "none",
-      // }}
-    >
+    <header>
       <nav>
         <div className="logo">
           <img
@@ -189,24 +144,26 @@ function Header() {
             {showCartItems && (
               <div className="cart-items-containerout">
                 {cartIsEmpty ? (
-                  
-                  <div className="empty-cart-message"> Your Cart is empty
-                  <div style={{textAlign: "center"}}>
-                    <NavLink 
-                      style={{
-                        fontFamily: "var(--font-stack-heading)",
-                        fontWeight: "700",
-                        fontSize: "10px",
-                        color: "#5624d0",
-                        border: "none",
-                        background: "transparent",
-                        display: "block",
-                        textDecoration: "none",
-                      }}
-                      to="/courses">
-                      Start Shopping
-                    </NavLink>
-                  </div>
+                  <div className="empty-cart-message">
+                    {" "}
+                    Your Cart is empty
+                    <div style={{ textAlign: "center" }}>
+                      <NavLink
+                        style={{
+                          fontFamily: "var(--font-stack-heading)",
+                          fontWeight: "700",
+                          fontSize: "10px",
+                          color: "#5624d0",
+                          border: "none",
+                          background: "transparent",
+                          display: "block",
+                          textDecoration: "none",
+                        }}
+                        to="/courses"
+                      >
+                        Start Shopping
+                      </NavLink>
+                    </div>
                   </div>
                 ) : (
                   <>
@@ -228,9 +185,7 @@ function Header() {
                       ))}
                     </div>
                     <div className="shadtop">
-                      <div className="total-price">
-                        Total: ₹{totalPrice}
-                      </div>
+                      <div className="total-price">Total: ₹{totalPrice}</div>
                       <NavLink
                         to="/cart"
                         onClick={handleCartLeave}
@@ -248,8 +203,11 @@ function Header() {
             <div
               onMouseEnter={handleUserHover}
               onMouseLeave={handleUserLeave}
-              style={{ position: "relative"  ,   display: "flex",
-              alignItems: "center", }}
+              style={{
+                position: "relative",
+                display: "flex",
+                alignItems: "center",
+              }}
               ref={dropdownRef}
             >
               <FiUser
