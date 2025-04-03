@@ -1,0 +1,267 @@
+/* Contact.css */
+
+/* General Styles */
+
+.contactpage {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 80px;
+  max-width: 1200px;
+  /* margin: 0 auto; */
+}
+
+/* Header Styles */
+
+.head {
+  background-color: #333;
+  color: white;
+  padding: 10rem 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.menu-button .icon-menu {
+  stroke: white;
+}
+
+.rightBox {
+  display: flex;
+  align-items: center;
+}
+
+.user-nav {
+  display: flex;
+  align-items: center;
+}
+
+.user-nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+/* Main Content Styles */
+
+.container-divider {
+  height: 1px;
+  background-color: #ddd;
+}
+
+.sub-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.breadcrumbs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.breadcrumbs li {
+  margin-right: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  fill: #333;
+  margin-right: 0.5rem;
+}
+
+.search input[type="search"] {
+  border: 1px solid #ccc;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+h-contact {
+  font-size: 2.5rem;
+  margin-left: 525px;
+  font-weight: bolder;
+  text-decoration: solid;
+}
+
+/* Form Styles */
+
+.form {
+  margin: 0 0 0 8rem;
+  background-color: #f8f8f8;
+  padding: 4rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-field {
+  margin-bottom: 1.5rem;
+}
+
+.form-field label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.form-field input[type="text"],
+.form-field input[type="email"],
+.form-field select,
+.form-field textarea {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-field textarea {
+  height: 150px;
+}
+
+.form-field select {
+  appearance: none;
+  text-align: center;
+}
+
+.form-field p {
+  font-size: 0.9rem;
+  margin-top: 0.2rem;
+}
+
+.upload-dropzone {
+  border: 2px dashed #ccc;
+  padding: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.upload-dropzone input[type="file"] {
+  display: none;
+}
+
+.upload-dropzone p {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.upload-pool {
+  list-style: none;
+  padding: 0;
+}
+
+.upload-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.upload-item-icon {
+  stroke: #333;
+  margin-right: 0.5rem;
+}
+
+.upload-link {
+  text-decoration: underline;
+  margin-right: 0.5rem;
+  color: #007bff; /* Blue color for links */
+}
+
+.upload-remove {
+  cursor: pointer;
+  color: #ff6347; /* Red color for remove button */
+}
+
+.upload-progress {
+  flex-grow: 1;
+}
+
+/* Button Styles */
+
+button1,
+input[type="submit"] {
+  background-color: #007bff;
+  margin-left: 400px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.2rem 4rem;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Footer Styles */
+
+.footer {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 1rem 0;
+  background-color: #f8f8f8;
+  border-top: 1px solid #ddd;
+}
+
+.footer a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-language-selector {
+  margin-left: 1rem;
+}
+
+/* Add any additional styles or overrides as needed */
+/* Add this CSS code to center the links within rightBox */
+.rightBox {
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  height: 100%; /* Ensure the container takes up the full height */
+}
+
+.user-nav {
+  display: flex;
+  flex-direction: column; /* Stack the links vertically */
+  text-align: center; /* Center text within the container */
+}
+
+.nav-wrapper {
+  margin-bottom: 1rem; /* Add some spacing between the links */
+}
+
+/* Rest of your existing CSS */
+nav {
+  margin-left: 90px;
+}

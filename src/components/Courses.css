@@ -1,0 +1,298 @@
+/* Add this CSS to your stylesheet or component styles */
+
+.course-list,
+.course-list-load {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 101px;
+  margin: 30px;
+
+}
+
+.course-list1{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 30px;
+  margin-top: 70px;
+}
+
+.course-card {
+  width: 245.59px;
+  padding-bottom: 30px;
+
+  margin-bottom: 120px; /* Add margin at the bottom of each card */
+  position: relative; /* Add this to make positioning of badge relative to the card */
+}
+
+.linkcourse:hover .course-name {
+
+   color: rgb(30, 30, 179);
+  cursor: auto;
+}
+
+img {
+  width: 100%;
+  height: 137px;
+
+}
+
+.headingcourse {
+  padding-top: 100px;
+  padding-bottom: 25px;
+  margin-left: 30px;
+  font-family: var(--font-stack-heading-serif);
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 1.25;
+  letter-spacing: -.05rem;
+  color: #000;
+}
+
+.fheadingcourse {
+  padding-top: 120px;
+  padding-bottom: 70px;
+  margin-left: 30px;
+  font-family: var(--font-stack-heading-serif);
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 1.25;
+  letter-spacing: -.05rem;
+}
+
+
+.rheadingcourse {
+  padding-top: 0px;
+  padding-bottom: 70px;
+  margin-left: 30px;
+  font-family: var(--font-stack-heading-serif);
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 1.25;
+  letter-spacing: -.05rem;
+}
+
+.cheadingcourse {
+  padding-top: 0px;
+  padding-bottom: 70px;
+  margin-left: 30px;
+  font-family: var(--font-stack-heading-serif);
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 1.25;
+  letter-spacing: -.05rem;
+}
+
+
+.linkcourse {
+  text-decoration: none;
+  color: inherit;
+}
+
+.coursename {
+  color: #101112;
+  font-weight: inherit;
+  font-size: medium;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.course-details {
+  padding-left: 4px;
+}
+
+.cut-price {
+  text-decoration: line-through !important;
+  color: #2d2f31 !important;
+  font-weight: !important inherit;
+}
+
+.current-price {
+  line-height: 1;
+  padding: 0.4rem 0;
+  margin-right: 0.8rem;
+  color: #007BFF;
+  font-family: var(--font-stack-heading);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -.02rem;
+}
+
+.bestseller-badge {
+  background-color: #FFD700; /* Set your desired background color */
+  color: #000; /* Set your desired text color */
+  padding: 5px 10px; /* Adjust padding as needed */
+  border-radius: 5px; /* Add rounded corners */
+  position: absolute;
+  top: 10px; /* Adjust the top position as needed */
+  left: 10px; /* Adjust the left position as needed */
+  font-weight: bold;
+  z-index: 1; /* Add this to ensure the badge is above the course image */
+}
+
+.star-filled {
+  color: #FFD700; /* Set the color for filled stars (e.g., yellow) */
+}
+
+.star-empty {
+  color: #ddd; /* Set the color for empty stars (e.g., gray) */
+}
+
+.course-card:hover {
+  box-shadow: inset 0 0 0 1px grey; 
+}
+.course-card:hover img {
+  filter: grayscale(0%) brightness(90%); /* Apply grayscale and brightness filters on hover */
+
+
+}
+
+.course-card:not(:hover) {
+  transition: box-shadow 0.3s; 
+}
+
+.course-card {
+  position: relative;
+}
+/* 
+.course-card:hover {
+  filter: grayscale(0%) brightness(90%); 
+} */
+
+.course-instructor {
+  font-family: var(--font-stack-text);
+  box-sizing: border-box;
+  font-weight: 400;
+  line-height: 1.4;
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+  white-space: nowrap;
+  display: -webkit-box!important;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  color: #6a6f73;
+}
+
+.loadmore {
+  background-color: transparent;
+  border: 1px solid #2d2f31;
+  color: var(--color-gray-500);
+  width: 210px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 30px auto;
+  border-radius: 0px;
+  cursor: pointer;
+  margin-left: 42.3%;
+  font-family: var(--font-stack-heading);
+  line-height: 1.2;
+  letter-spacing: 0;
+  transition: background-color 0.3s;
+}
+
+.loadmore:hover {
+  background-color: rgba(23, 57, 83, 0.12);
+}
+
+
+ .course-list1cart {
+  display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin: 0 50px;
+}
+
+.course-cardcart {
+  display: flex;
+  /* width: calc(50% - 9px); */
+  height: 249px;
+  width: 616px;
+  /* width: fit-content; */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.course-imagecart {
+  flex: 0 0 200px;
+}
+
+.course-imagecart img {
+      /* width: 100%; */
+      height: 249px;
+      width: 342px;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+}
+
+.course-detailscart {
+  flex: 1;
+  padding: 20px;
+}
+
+.course-titlecart {
+  margin: 0;
+}
+
+.course-titlecart a {
+  text-decoration: none;
+  color: #333;
+}
+
+.course-instructor,
+.course-rating,
+.course-pricing {
+  margin-top: 10px;
+}
+
+.cart-action {
+  padding: 20px;
+}
+
+.cartbtn {
+  position: relative;
+  top: -90px;
+  left: 390px;
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  background-color: gray;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  display: block;
+  margin-top: 10px;
+}
+
+.cartbtn:hover {
+  background-color: #6e6e6e;
+}
+
+.linkcoursecart {
+  text-decoration: none;
+  display: inline-flex;
+  color: inherit;
+  
+  }
+
+
+.bestseller-badgecart {
+  position: absolute;
+  /* top: 240px; */
+  margin: 10px;
+  background-color: #ffcc00;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}

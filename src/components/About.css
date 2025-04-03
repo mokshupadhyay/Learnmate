@@ -1,0 +1,68 @@
+
+.about-section {
+  padding: 100px 0 0 0;
+  background: black;
+  color: white;
+  text-align: center;
+  padding-bottom: 0px;
+}
+
+.about-section h1 {
+  font-size: 2.4em;
+  color: #c770f0;
+}
+
+.about-section p {
+  font-size: 20px;
+  margin: 77px 0;
+}
+
+.abouticon:hover {
+  transform: scale(1.05);
+  border: 2.2px solid rgba(197, 115, 230, 0.883);
+}
+
+/* Tech Stack Icons */
+.tech-icons {
+  display: flex;
+  flex-wrap: wrap; /* Allow icons to wrap into a new line */
+  justify-content: center; /* Center icons horizontally */
+  gap: 20px; /* Adjust spacing between columns */
+  max-width: 1200px; /* Limit the width of each column */
+  margin: 0 auto; /* Center the columns */
+  
+  p{
+  font-size: 20px;
+  }
+  
+  .aboutpara{
+  margin: 50px;
+  font-size: 40px;
+  }   
+}
+
+.abouticon {
+  width: 14rem;
+  height: 8rem;
+  margin: 10px; /* Adjust spacing between icons */
+  font-size: 4.5em;
+  opacity: 0.93;
+  border: 1.7px solid rgba(200, 137, 230, 0.637);
+  border-radius: 5px;
+  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137);
+  overflow: hidden;
+  transition: transform 0.4s ease;
+}
+
+.img-fluid{
+  width: 600px;
+    height: 400px;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+
+.imagelmfooter{
+  position: fixed;
+  
+}

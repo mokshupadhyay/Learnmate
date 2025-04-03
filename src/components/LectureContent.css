@@ -1,0 +1,69 @@
+/* Styles for the lecture page container */
+.lecturepage {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Styles for the lecture content */
+.lecture-content {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Styles for the video container */
+.video-container {
+  margin-top: 20px;
+}
+
+/* Styles for the lecture name */
+.lecture-name {
+  color: #3c763d;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Styles for the lecture timing */
+.lecture-timing {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* Additional styling for the video content */
+.video-container iframe {
+  width: 100%;
+  height: 400px; /* Adjust the height as needed */
+  border: 1px solid #ddd; /* Add a border for better visibility */
+}
+
+/* Loading and error message styles */
+.loading-message,
+.error-message {
+  font-size: 18px;
+  color: #ff0000;
+  margin-top: 20px;
+}
+
+/* Styles for navigation buttons */
+.navigation-buttons {
+  margin-top: 20px;
+}
+
+.navigation-buttons button {
+  width: 180px;
+  height: 50px;
+  position: relative;
+  margin-right: 50px;
+  padding: 6px 12px; /* Adjust padding for smaller size */
+  font-size: 14px; /* Adjust font size for smaller size */
+  cursor: pointer;
+  background-color: #394a5c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+.navigation-buttons button:hover {
+  background-color: #684d72;
+}

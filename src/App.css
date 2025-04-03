@@ -1,38 +1,149 @@
-.App {
-  text-align: center;
-}
+    /* .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 30px 0px;
+    }
+  */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+    * {
+    margin: 0;
+    padding: 0;
+    }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+    nav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    color: black;
+    }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+    .logo {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    /* padding-right: 40px; */
+    }
 
-.App-link {
-  color: #61dafb;
-}
+    .menu a {
+    text-decoration:solid;
+    color: black;
+    font-weight:none;
+    /* opacity: 4; */
+    padding: 10px 25px;
+    font-size: 20px;
+    position: relative;
+    }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+    .menu a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 3px solid darkslategrey;
+    transition: 0.5s linear;
+    }
+
+    .menu a:hover:before {
+    width: 90%;
+    }
+
+    
+
+    .bookit {
+    max-width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    }
+
+    .bookit span {
+    letter-spacing: 7px;
+    text-decoration: solid;
+    font-weight: bolder;
+    }
+
+    .bookit h1 {
+    font-size: 3.5em;
+    }
+
+    .bookit a {
+    text-decoration: solid;
+    font-weight: bolder;
+    background: white;
+    /* color: darkslategrey; */
+    color: black;
+    padding: 12px 20px;
+    letter-spacing: 10px;
+    transition: 0.5s;
+    }
+
+    .bookit a:hover {
+    text-decoration: solid;
+    font-weight:bolder;
+    background: transparent;
+    border: 1px solid indianred;
+    color: black;
+    }
+
+
+    section{
+        color: 'white';
+        padding: '20px';
+      }
+  
+    .booking{
+        margin: 10px;
+        margin-top: 190px;
+        padding: 50px;
+        background-color: darkslategray;
+    }
+
+
+    /* Add these styles for the "Sign-up/Sign-in" button */
+    .registeer {
+      display: flex; /* Use flexbox to align items horizontally */
+      align-items: center; /* Center items vertically */
+      margin-right:20px;
+    }
+    
+    .registeer .link {
+      text-decoration: none; /* Remove underline for the cart link */
+      color: white;
+      width: 20px;
+      height: 20.3px;
+      margin-right: 5px; /* Add some right margin to separate the links */
+      background: black;
+      border: 1px solid indigo;
+      color: white;
+    }
+    
+    .registeer a {
+      text-decoration: solid;
+      font-weight: bold;
+      font-size: larger;
+      padding: 10px 10px;
+      transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+      background: black;
+      border: 1px solid indigo;
+      color: white;
+    }
+    
+    .registeer a:hover {
+      text-decoration: solid;
+      font-weight: bold;
+      font-size: larger;
+      border: 1px solid indigo;
+      color: white;
+      background: indigo;
+      /* border: 1px solid transparent; */
+      border: 1px solid;
+    }
+    

@@ -1,0 +1,63 @@
+.message-container1{
+    background-image: url('../Assets/delete.png');
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-position: center; /* Center the background image */
+    
+    width: 90%;
+    height: 80vh;
+    margin-top: 0px;
+    
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+    text-align: center;
+    align-items: center;
+    display: grid;
+    margin: 100px auto;
+}
+
+.message-container2{
+    width: 90%;
+    height: 80vh;
+    
+    background-image: url('../Assets/logincon.avif');
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-position: center; /* Center the background image */
+    
+    margin-top: 0px;
+    
+     border: 2px solid #ccc;
+    border-radius: 5px;
+    /* background-color: #ffffff; */
+    margin: 100px auto;
+    text-align: center;
+    align-items: center;
+    display: grid;
+}
+
+.not-logged-in-message {
+    color: #555;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px; /* Add padding to improve spacing */
+}
+
+.empty-cart-message {
+    color: #555;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px; /* Add padding to improve spacing */
+}
+
+.msg {
+    color: #555; /* Adjust text color for better visibility */
+    font-size: 24px; /* Increase font size for better readability */
+    font-weight: bold;
+    padding: 20px; /* Add padding to improve spacing */
+    border: 0.001px solid ; 
+    background-color: #ffffff;    
+    /* border-radius: 5px; */
+
+    margin: 300px auto;
+}
